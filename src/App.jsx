@@ -10,7 +10,7 @@ import Graphic from './Components/Graphic.jsx'
 import Pagenotfound from './Pagenotfound.jsx'
 import Courseerror from './Components/Courseerror.jsx'
 import Nav from './Components/Nav.jsx'
-import Card from './Components/card.jsx'
+import Card from './Components/Card.jsx'
 
 
 
