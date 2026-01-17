@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Link, Outlet, useNavigate } from 'react-router-dom'
 import { BrowserRouter } from 'react-router-dom'
 import Webdevelop from './Webdevelop'
@@ -7,8 +7,32 @@ import Graphic from './Graphic'
 
 
 
+
  function Coorses() {
    const navigate = useNavigate();
+   const barRef = useRef(null);
+
+  useEffect(() => {
+    const bar = barRef.current;
+    let speed = 1; // pixels per frame
+    let reqId;
+
+    // duplicate content for seamless loop
+    bar.innerHTML += bar.innerHTML;
+
+    const scroll = () => {
+      if (!bar) return;
+      if (bar.scrollLeft >= bar.scrollWidth / 2) {
+        bar.scrollLeft = 0; // reset smoothly
+      } else {
+        bar.scrollLeft += speed;
+      }
+      reqId = requestAnimationFrame(scroll);
+    };
+
+    scroll(); // start animation
+    return () => cancelAnimationFrame(reqId); // cleanup
+  }, []);
  
   return (
     <div className='box'>
@@ -16,13 +40,13 @@ import Graphic from './Graphic'
       <section class="publisher-section">
   <div class="publisher-header">
     <h2>Shop By Publisher</h2>
-    <div class="arrows">
+    {/* <div class="arrows">
       <span>&larr;</span>
       <span>&rarr;</span>
-    </div>
+    </div> */}
   </div>
 
-  <div class="publisher-bar">
+  <div class="publisher-bar" ref={barRef}>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtAKXv0SCZiX1BEku6ts1FXZs_eYVUP0ONKQ&s" alt="Hello World Kids"/>
     <img src="https://dictionary.cambridge.org/external/images/og-image.png" alt="Cambridge"/>
     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6vlL7jzNuPOgaBMubtTvWRhCXxIA0s-g7_Q&s" alt="Elsevier"/>
