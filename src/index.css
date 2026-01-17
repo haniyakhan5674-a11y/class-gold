@@ -592,11 +592,7 @@ body {
   font-size: 24px;
   
 }
-@media (max-width: 600px) {
- .ecat-book-card h3 {
-    font-size: 16px;   /* smaller size for mobile */
-  }
-}
+
 
 .ecat-book-card p {
   font-size: 13px;
@@ -709,7 +705,7 @@ body {
 .logo-box {
   background: white;
   color: #c0392b;
-  padding: 10px 10px;
+  padding: 20px 20px;
   font-weight: bold;
 }
 

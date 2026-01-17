@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { Route, Routes, useNavigate } from 'react-router-dom'
+import React, {  } from 'react'
+import { Route, Routes, } from 'react-router-dom'
 import Home from './Components/Home.jsx'
 import About from './Components/About.jsx'
 import Coorses from './Components/Coorses.jsx'
@@ -15,31 +15,31 @@ import Card from './Components/Card.jsx'
 
 
  function App() {
-   const [search, setSearch] = useState("");
-  const navigate = useNavigate("");
+  //  const [search, setSearch] = useState("");
+  // const navigate = useNavigate("");
 
-  const handleSearch = () => {
-    const query = search.toLowerCase().trim();
+  // const handleSearch = () => {
+  //   const query = search.toLowerCase().trim();
 
-    if (query === "home") navigate("/home");
-    else if (query === "about") navigate("/about");
-    else if (query === "coorses") navigate("/coorses");
-        else  navigate("/pagenotfound");
+  //   if (query === "home") navigate("/home");
+  //   else if (query === "about") navigate("/about");
+  //   else if (query === "coorses") navigate("/coorses");
+  //       else  navigate("/pagenotfound");
 
-  };
+  // };
   return (
     <div>
       <center><span>haniyakhan5674@gmail.com</span></center>
               <marquee behavior="left" direction="left" className="bom">Pay online for Free Shooping Pay online for Free Shipping Pay Online for Free Shipping Pay online for Free Shipping~ Pay online for Free Shipping </marquee>
 
         <Navebar/><br />
-         <header className="header">
+         {/* <header className="header">
       <div className="logo">
         <span className="logo-box">M</span>
         <span>DISCOVER ▾</span>
       </div>
 
-      <div className="search-bar">
+      <center><div className="search-bar">
         <input
           type="text"
           placeholder="Search by title, author or keyword"
@@ -48,10 +48,10 @@ import Card from './Components/Card.jsx'
           onKeyDown={(e) => e.key === "Enter" && handleSearch()}
         />
         
-      </div>
+      </div></center>
 
       
-    </header>
+    </header> */}
   
        <Routes>
       
