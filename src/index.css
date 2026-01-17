@@ -589,8 +589,13 @@ body {
 }
 
 .ecat-book-card h3 {
-  font-size: 16px;
-  margin: 10px 6px 4px px;
+  font-size: 24px;
+  
+}
+@media (max-width: 600px) {
+ .ecat-book-card h3 {
+    font-size: 16px;   /* smaller size for mobile */
+  }
 }
 
 .ecat-book-card p {

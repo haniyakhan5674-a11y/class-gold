@@ -32,7 +32,7 @@ import Graphic from './Graphic'
     <img src="https://www.memoriapress.com/wp-content/uploads/2020/07/I-Can-Read-It-Book-1.jpg" alt="I Can Read"/>
   </div>
 </section>
-       <center> <h2 className='uu'>MCAT MCQS BOOKS</h2></center>
+       <h2 className='uu'>MCAT MCQS BOOKS</h2>
         
        
         <div class="ecard-container">
