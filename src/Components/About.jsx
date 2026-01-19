@@ -20,7 +20,7 @@ export default function About() {
   </div>
 </div>
 
-    <h2 className='uu'>ECAT  BOOKS </h2>
+    <center><h2 className='uu'>ECAT  BOOKS </h2></center>
     <div className="ecard-container">
 
   <div className="ecat-book-card">

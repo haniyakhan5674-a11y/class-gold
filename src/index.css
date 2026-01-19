@@ -718,7 +718,7 @@ margin-right: 30px;
   background-color: white
 }
 .end {
-  background-color: rgb(140, 123, 101);
+  background-color: #263036;
   padding: 20px;
   border-radius: 40px;
   width: 90%;
@@ -730,7 +730,9 @@ margin-right: 30px;
   align-items: center;   /* 🔥 CENTER input & button */
   gap: 15px;
 }
-
+.end h3{
+  color: white;
+}
 
 /* Input */
 .lab {
@@ -753,7 +755,7 @@ margin-right: 30px;
 /* Button */
 .emd {
   background-color: orange;
-  color: black;
+  color: rgb(8, 8, 8);
   width: 160px;
   height: 40px;
   border: none;
